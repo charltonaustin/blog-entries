@@ -43,7 +43,6 @@ I decided to take a look at the core implementation of frequencies to get a feel
   (persistent!   
     (reduce (fn [counts x] (assoc! counts x (inc (get counts x 0))))
             (transient {}) coll)))
-
 ```
 
 The largest differences come in the lack of recursion and the use of transient data structures. Transient data structures are meant for speed while abstracting away the messy details of mutability and keeping with the Clojure model.

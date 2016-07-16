@@ -7,7 +7,7 @@ Given an array of integers, print the leaders in the array. A leader is an eleme
 
 Is was my first attempt at coming up with a solution. Naturally I used recursion and simply walked down the array seeing if every element after it was the same.
 
-The time complexity of this is O(n!) which isn't great.
+The time complexity of this is O(n^2) which isn't great.
 
 ```clojure
 ;; My code goes here.
