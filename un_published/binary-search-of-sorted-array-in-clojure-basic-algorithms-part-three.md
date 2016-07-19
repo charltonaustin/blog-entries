@@ -90,7 +90,7 @@ For binary-search I got
 {:average 728.1910227966308, :std-deviation 441.7981992776274}
 ```
 
-There is some difference here. The standard deviations show that java-binary-search has a slightly wider spread, which means it could be faster in some cases with some outliers as compated to binary searc. Since I didn't I decided to look at the implementation of binarySearch within Java itself. For the record here it is.
+There is some difference here. The standard deviations show that java-binary-search has a slightly wider spread, which means it could be faster in some cases with some outliers as compared to binary search. Since I didn't I decided to look at the implementation of binarySearch within Java itself. For the record here it is.
 
 ```java
 private static <T> int indexedBinarySearch(List<? extends T> l, T key, Comparator<? super T> c) {
