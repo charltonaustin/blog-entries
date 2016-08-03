@@ -33,4 +33,4 @@ var findPallidromes = function(number){
 }
 ```
 
-If you'd like to see the full code please see my daily [toy problem](https://github.com/charltonaustin/toy-problems/tree/master/euler-problem-4) exercises that I've been working on. It includes tests and a README.
+If you'd like to see the full code please see my daily [toy problem](https://github.com/charltonaustin/toy-problems/) exercises that I've been working on. It includes tests and a README.

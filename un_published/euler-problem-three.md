@@ -89,4 +89,4 @@ var findPrimeNumber = function(number){
 ```
 This guy works much faster and doesn't give out of memory errors, but it works on an assumption that admittedly I have not proven. That the first prime we find using Fermat Factorization is indeed the largest prime number that exists. Now I believe it to be true, but I'm not sure how to prove it. I'm just going to have to do a bit more research. 
 
-If you'd like to see the full code please see my daily [toy problem](https://github.com/charltonaustin/toy-problems/tree/master/euler-problem-3) exercises that I've been working on. It includes tests and a README.
+If you'd like to see the full code please see my daily [toy problem](https://github.com/charltonaustin/toy-problems/) exercises that I've been working on. It includes tests and a README.
