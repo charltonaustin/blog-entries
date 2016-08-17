@@ -16,9 +16,9 @@ For the inside-out I had:
   (loop [a-board (board)
          number-of-moves 0]
     (if (>= number-of-moves 9)
-      (do        (print-to-screen (str-board a-board))
+      (do (print-to-screen (str-board a-board))
         (exit-now!))
-      (do        (print-to-screen (str-board a-board))
+      (do (print-to-screen (str-board a-board))
         (let [player-function (nth turn-function number-of-moves)
               new-board (player-function a-board)
               maybe-winner (check-for-winner a-board)]
@@ -36,10 +36,12 @@ Outside-in:
 (defn -main
   [& args]
   (loop [board (vec (range 1 10))
-         number-of-moves-made 0         get-next-move-fn (get-player-move-fn number-of-moves-made)]
+         number-of-moves-made 0
+         get-next-move-fn (get-player-move-fn number-of-moves-made)]
     (print-to-screen (string-board board))
     (if (= number-of-moves-made 9)
-      nil      (do        (let [player-move (get-next-move-fn board)
+      nil
+      (do (let [player-move (get-next-move-fn board)
               new-board (update-board board player-move)
               number-of-moves-made (inc number-of-moves-made)
               winner? (check-for-winner new-board)]
@@ -56,4 +58,4 @@ The tests were significantly different. With the outside-in method I wrote most 
 
 ### Things I learned
 
-First towards the end of the exercise I was often using the main loop to write the function interface and then stubbing out the implementation using with-redefs for underlying functions. I actually like this, but because this was such a simple example I'm not sure how complex it would be to mock other functions. I liked it however because by the end I think this started isolating my tests more and stopped me from testing everything in the (-main) test. While there isn't much of a difference in the outcome, I did like the outside-in method more. 
+First towards the end of the exercise I was often using the main loop to write the function interface and then stubbing out the implementation using with-redefs for underlying functions. I actually like this, but because this was such a simple example I'm not sure how complex it would be to mock other functions. I liked it however because by the end I think this started isolating my tests more and stopped me from testing everything in the (-main) test. While there isn't much of a difference in the outcome, I did like the outside-in method more.

@@ -8,7 +8,7 @@ The solution is pretty straight forward. I added in some printlns to get a sense
 
 ```clojure
 (defn binary-search [v value]
-  (loop [low 0         high (dec (count v))
+  (loop [low 0 high (dec (count v))
          depth 0]
     (let [half-way (quot (+ high low)  2)]
       (do (println (str "half-way is " half-way))
@@ -16,14 +16,13 @@ The solution is pretty straight forward. I added in some printlns to get a sense
           (println (str "high is " high))
           (println (str "depth is " depth))
           (if (<= high (inc low))
-            (cond              (= value (v low)) low
+            (cond (= value (v low)) low
               (= value (v high)) high
               :else nil)
             (let [middle (quot (+ low high) 2)]
               (if (< (v middle) value)
                 (recur (inc middle) high (inc depth))
                 (recur low middle (inc depth)))))))))
-
 ```
 
 You can call the function like this:
@@ -34,7 +33,10 @@ You can call the function like this:
 
 Dialing up the range you can see how many steps it takes to get to the value.
 
-There's also a java implementation of binary search. java.util.Collections.binarySearch(List<T> list, T key, Comparator<? super T> c).
+There's also a java implementation of binary search.
+```java
+java.util.Collections.binarySearch(List<T> list, T key, Comparator<? super T> c).
+```
 
 I decided to see compare the two implementations with a variety of elements in the collection while, looking for a random element. I took the average time over 100,000 runs to see how different the two implementations did.
 
@@ -43,11 +45,11 @@ The two implementations that I ran were.
 
 ```clojure
 (defn binary-search [v value]
-  (loop [low 0         high (dec (count v))
+  (loop [low 0 high (dec (count v))
          depth 0]
     (let [half-way (quot (+ high low)  2)]
       (if (<= high (inc low))
-        (cond          (= value (v low)) low
+        (cond  (= value (v low)) low
           (= value (v high)) high
           :else nil)
         (let [middle (quot (+ low high) 2)]
@@ -78,13 +80,13 @@ For 1000000 element in the array using binary-search I got.
 Insanely they were basically the same. It took about 5 mins to get the results back for 10,000 runs. So I decided to dial up the number of elements to 10,000,000 and reduce the number of runs to 100.
 
 
-For java-binary-search I got 
+For java-binary-search I got
 
 ```clojure
 {:average 870.9942288208008, :std-deviation 705.2356880437546}
 ```
 
-For binary-search I got 
+For binary-search I got
 
 ```clojure
 {:average 728.1910227966308, :std-deviation 441.7981992776274}
@@ -94,20 +96,20 @@ There is some difference here. The standard deviations show that java-binary-sea
 
 ```java
 private static <T> int indexedBinarySearch(List<? extends T> l, T key, Comparator<? super T> c) {
-    int low = 0;    
+    int low = 0;
     int high = l.size()-1;
     while (low <= high) {
-        int mid = (low + high) >>> 1;        
-        T midVal = l.get(mid);        
+        int mid = (low + high) >>> 1;
+        T midVal = l.get(mid);
         int cmp = c.compare(midVal, key);
         if (cmp < 0)
-            low = mid + 1;        
+            low = mid + 1;
         else if (cmp > 0)
-            high = mid - 1;        
-        else            
-            return mid; // key found    
+            high = mid - 1;
+        else
+            return mid; // key found
     }
-    
+
     return -(low + 1);  // key not found
 }
 ```
