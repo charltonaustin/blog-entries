@@ -18,25 +18,20 @@ The time complexity of this is O(n^2) which isn't great.
       (if (every? #(> head %1) tail)
         (conj (find-leader tail) head)
         (find-leader tail)))))
-
-(def random-array (map (rand-int 10000) ))
-(time (find-leader (vec '(98 23 54 12 20 7 27))))
 ```
 
-To see if I could get this any better I decided to try and find a non recursive method that does it in O(n) time. To do that we traverse backwards across the array keeping track of the largest element and when we find something smaller then we pop it into an accumulator. Then at the end we simply return the accumulator. 
+To see if I could get this any better I decided to try and find a non recursive method that does it in O(n) time. To do that we traverse backwards across the array keeping track of the largest element and when we find something smaller then we pop it into an accumulator. Then at the end we simply return the accumulator.
 
 ```clojure
-;; need to fix this implementation
 (defn find-leader-loop
   [coll]
   (loop [largest (last coll)
          all (butlast coll)
-         leaders '()]
+         leaders (conj '() (last coll))]
     (if all
       (if (> (last all) largest)
-        (recur (last all) all (conj largest leaders))
-        (recur largest all leaders))
+        (recur (last all) (butlast all) (conj leaders (last all)))
+        (recur largest (butlast all) leaders))
       leaders)))
-
-(time (find-leader (vec '(98 23 54 12 20 7 27))))
 ```
+One thing to note about this. Since we are using last we should have a vector or else this becomes O(n^2) again.
