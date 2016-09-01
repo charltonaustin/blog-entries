@@ -1,11 +1,20 @@
 ### The problem
 
-Write a program that takes a number w, then accepts lines of text and outputs lines of text, where the output lines have as many words as possible but are never longer than w characters. Words may not be split, but you may assume that no single word is too long for a line. 
+Write a program that takes a number w, then accepts lines of text and outputs lines of text, where the output lines have as many words as possible but are never longer than w characters.
+Words may not be split, but you may assume that no single word is too long for a line. 
 [Source](http://c2.com/cgi/wiki?TelegramProblem)
 
 ### Solution
 
-This is a pretty straightforward problem when it comes down to it, but it takes a bit of thinking to get there. We need to work through the different edge cases to figure out exactly how to make this work. I would like to create a solution that deals with channels allowing users to send delete characters and such. I think it would be an interesting problem in itself. That being said, my solution starts out by initializing the output and current output so that we don't have special cases in our for-loop. It also sanitizes and formats the information that we will be walking over. Next it loops through and checks to see if the line will grow to long. If it won't, we add to the current line output; if it will, we save the current line output to the total output and then initialize the next line output. Finally, on our way out, we flush the last partial line.
+This is a pretty straightforward problem when it comes down to it, but it takes a bit of thinking to get there.
+We need to work through the different edge cases to figure out exactly how to make this work.
+I would like to create a solution that deals with channels allowing users to send delete characters and such.
+I think it would be an interesting problem in itself.
+That being said, my solution starts out by initializing the output and current output so that we don't have special cases in our for-loop.
+It also sanitizes and formats the information that we will be walking over.
+Next it loops through and checks to see if the line will grow to long.
+If it won't, we add to the current line output; if it will, we save the current line output to the total output and then initialize the next line output.
+Finally, on our way out, we flush the last partial line.
 
 ```javascript
 var createWriter = function(w){
@@ -40,4 +49,5 @@ var createWriter = function(w){
 }
 ```
 
-If you'd like to see the full code please see my daily [toy problem](https://github.com/charltonaustin/toy-problems/tree/master/telegram-problem) exercises that I've been working on. It includes tests and a README.
+If you'd like to see the full code please see my daily [toy problem](https://github.com/charltonaustin/toy-problems/tree/master/telegram-problem) exercises that I've been working on.
+It includes tests and a README.
