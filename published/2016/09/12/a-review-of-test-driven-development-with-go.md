@@ -1,4 +1,4 @@
-In a (previous blog entry)[2016/09/02/a-review-of-an-introduction-to-programming-in-go.md] I talk about my recent technical challenge with (CoreOS)[https://coreos.com/].
+In a [previous blog entry](2016/09/02/a-review-of-an-introduction-to-programming-in-go.md) I talk about my recent technical challenge with [CoreOS](https://coreos.com/).
 I enjoyed my interview there so much that I started doing some reading about Go.
 Here's a second book that I read that I would like to write a review about.
 It's called [_Test-Driven Development With Go_](https://leanpub.com/golang-tdd/read) written by Yigal Duppen.
