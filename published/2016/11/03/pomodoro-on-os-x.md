@@ -11,7 +11,9 @@ If you haven't used it the [at command](http://www.computerhope.com/unix/uat.htm
 The osascript is a hook for shell scripts into AppleScripts.
 Putting those two things together I came up with this.
 
-``` at now + 25 minutes <<< "osascript -e 'tell app \"System Events\" to display dialog \"Take A Break Pomodoro :)\"'" ```
+```
+at now + 25 minutes <<< "osascript -e 'tell app \"System Events\" to display dialog \"Take A Break Pomodoro :)\"'"
+```
 
 This is a command that you can put into a script and run to set up a pomodoro timer that will pop up 25 minutes later.
 
