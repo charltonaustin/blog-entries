@@ -1,8 +1,8 @@
 ### Pomodoro
 If you haven't ever used the [pomodoro technique](http://pomodorotechnique.com/) then you are missing out.
 It is a great way to stay focused on one task at a time.
-It is also a good way to get yourself moving on a regularly.
-There is just one I don't like about it.
+It is also a good way to get yourself moving regularly.
+There is just one thing I don't like about it.
 In order to have a good timer you usually have to have something that bothers your neighbor at work.
 For a while I was using my phone timer which worked okay, but I'm pretty sure my work mates hated me.
 ### Solution
