@@ -1,14 +1,20 @@
 ### Pomodoro
-If you haven't every used the [pomodoro technique](http://pomodorotechnique.com/) then you are missing out.
-I've started using it and a standing desk to help keep me focused and without back pain.
-One thing about it is I don't have a pomodoro timer.
-For a while I was using my phone timer which worked okay, but I really wanted something that didn't bother my neighbors.
-In comes the at command.
-If you haven't used it the at command schedules a command to execute sometime in the future.
-In the case of OSX there is a great little utility that can send events to apps.
+If you haven't ever used the [pomodoro technique](http://pomodorotechnique.com/) then you are missing out.
+It is a great way to stay focused on one task at a time.
+It is also a good way to get yourself moving on a regularly.
+There is just one I don't like about it.
+In order to have a good timer you usually have to have something that bothers your neighbor at work.
+For a while I was using my phone timer which worked okay, but I'm pretty sure my work mates hated me.
+### Solution
+To solve this problem I used a *nix utility called at and an OSX utility called osascript.
+If you haven't used it the [at command](http://www.computerhope.com/unix/uat.htm) it schedules a command to execute sometime in the future.
+The osascript is a hook for shell scripts into AppleScripts.
 Putting those two things together I came up with this.
+
 ``` at now + 25 minutes <<< "osascript -e 'tell app \"System Events\" to display dialog \"Take A Break Pomodoro :)\"'" ```
-This is a command that you can put into a script and then pretty easily start a pomodoro timer from your command line.
-It will send your screen a pop up reminding you to take a short break after 25 minutes.
+
+This is a command that you can put into a script and run to set up a pomodoro timer that will pop up 25 minutes later.
+
+### Next steps
 The next steps would be having a hook so then when you hit okay it starts up a 5 min timer that has another pop up.
 That next pop up should set another timer for 25 minutes and then maybe I will never forget to set up my next pomodoro timer.
