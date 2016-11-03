@@ -7,7 +7,7 @@ In order to have a good timer you usually have to have something that bothers yo
 For a while I was using my phone timer which worked okay, but I'm pretty sure my work mates hated me.
 ### Solution
 To solve this problem I used a *nix utility called at and an OSX utility called osascript.
-If you haven't used it the [at command](http://www.computerhope.com/unix/uat.htm) it schedules a command to execute sometime in the future.
+If you haven't used it the [at command](http://www.computerhope.com/unix/uat.htm) schedules a command to execute sometime in the future.
 The osascript is a hook for shell scripts into AppleScripts.
 Putting those two things together I came up with this.
 
