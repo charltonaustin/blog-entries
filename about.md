@@ -4,6 +4,8 @@
 
 This blog is a labor of love meant to give back to tech community which has helped me grow so much.
 If you find tech or tech management interesting hopefully you find this blog interesting.
+I believe that security, education, and software can come together to make the world a better place.
+
 
 &nbsp;
 - Please see my other work at [GitHub](https://github.com/charltonaustin)
