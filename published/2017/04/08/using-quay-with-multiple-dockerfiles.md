@@ -1,6 +1,7 @@
 # The problem
 
 Let's say you have the following folder layout:
+```
 app1/
 app2/
 shared-infra-resources/
@@ -9,7 +10,7 @@ continuous-integration/
                           app1.Dockerfile
                       app2/
                           app2.Dockerfile
-
+```
 And you would like to build app1.Dockerfile and app2.Dockerfile in your Docker registry.
 
 # The Solution
