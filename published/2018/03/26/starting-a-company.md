@@ -20,7 +20,7 @@ It wasn't a healthy or sustainable pace, but it was the what I had to do to get 
 Our first test was a very lo-fi experiment in Chicago for the 4th Ward.
 It went well and we believed that continuing our proof of concept made sense.
 At this point we got a few paid interns from [UChicago](https://www.uchicago.edu/) and [UofM](https://www.umich.edu/).
-We were very fortunate to have two incredibly talented budding software engineers [Steven Schmatz](https://www.linkedin.com/in/steven-schmatz/) and [Abi Hunter](https://www.linkedin.com/in/abigail-hunter/).
+We were very fortunate to have these two incredibly talented budding software engineers [Steven Schmatz](https://www.linkedin.com/in/steven-schmatz/) and [Abi Hunter](https://www.linkedin.com/in/abigail-hunter/).
 We began to build our first product the [Team App](https://www.tuesdaycompany.com/team-app/) and the [Team Dashboard](https://www.tuesdaycompany.com/team-dashboard/).
 It was rocky and we did it in a truly minimum viable product style.
 We had only interns, almost no budget, and myself who could work only on nights and weekends.
