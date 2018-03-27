@@ -43,7 +43,7 @@ They spend a few minutes here on a social media platform.
 They spend a few minutes there on a social media platform.
 People are much less likely to interrupt a pair than they are to distract a single worker.
 Finally you can only hold so much in your brain at one time.
-Sharing that the coding load I think eases the cognitive load which allows you to reuse more code or think of better solutions as you work.
+Sharing what code you hold in your head eases the cognitive load which allows you to reuse more code or think of better solutions as you work.
 The flip side of this is while you are doing during code reviews there are often lots of time when the code is just sitting.
 To combat that stasis, I often see developers starting on their next story.
 This wouldn't be bad except the time it takes to context switch back and forth can be large.
@@ -54,7 +54,7 @@ However, sometimes when pairing you can't do certain tasks in parallel, and depe
 ### Conclusion
 I still think that pairing is superior to code review.
 However just like almost any plan you make in life your actions should depend on the situation.
-It is best to either pair or have a code review even though neither system is foolproof.
+It is best to either pair or have a code review than have no review at all even though neither system is foolproof.
 If you pair and someone isn't paying attention or if you review code and you aren't paying attention, bugs can creep into your code.
 Or maybe no matter what, bugs will creep into your code.
 The real question is do you have strategies to mitigate and remedy the negative effects?
