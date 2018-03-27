@@ -4,7 +4,7 @@ I have never had code reviews before.
 I've mostly worked in environments where I have paired directly with people.
 So I wanted to do a quick review on the differences between the two methods.
 
-### Communication:
+### Communication
 I think that programming is a team sport and people need a bunch of communication in order to get anything done.
 That said, I want to talk about communication between team members when you are pairing vs when you are doing code reviews.
 I think that the communication becomes incredibly slow when you are doing code reviews.
