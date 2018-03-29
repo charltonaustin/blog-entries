@@ -46,4 +46,4 @@ else
   delayed_mac 25 five_min
 fi
 ``` 
-Now all I have to do is run twenty_fiv_min and I can keep track of what I'm doing all day.
+Now all I have to do is run the script and I can keep track of what I'm doing all day.
