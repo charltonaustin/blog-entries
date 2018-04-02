@@ -17,5 +17,5 @@ I believe that the data our users entrust to us should be cared for and that the
 
 ## Conclusion
 This is a tricky and difficult subject.
-Something that professionals everywhere should spend time thinking about.
+Something that professionals everywhere should spend at least a little time thinking about.
 Software engineers have a responsibility to society to be thoughtful about the code they write and what it might do.
