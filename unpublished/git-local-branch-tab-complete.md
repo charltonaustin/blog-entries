@@ -3,7 +3,7 @@ I'd like to be do a `git checkout [tab]` and have the tab complete only complete
 
 ### The solution.
 So I use zsh and after doing a bit of searching around I couldn't find a great introduction to tab completeion in zshell.
-After some looking around if found this.
+After some looking around I found this.
 
 ```
 if [[ ! -o interactive ]]; then
