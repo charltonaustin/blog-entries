@@ -1,9 +1,11 @@
 Recently I read a report from the 2018 stack overflow survey, [here](https://insights.stackoverflow.com/survey/2018/?utm_source=Iterable&utm_medium=email&utm_campaign=dev-survey-2018-promotion).
+From the survey I quote:
+>Only tiny fractions of developers say that they would write unethical code or that they have no obligation to consider the ethical implications of code, but beyond that, respondents see a lot of ethical gray.
 Given the recent [investigation](http://money.cnn.com/2018/03/26/technology/facebook-ftc-investigation/index.html) into Facebook.
 I thought it might be prudent to do a little thinking and writing about what it means to write code ethically.
 
 ## What does it mean to write code ethically
-I'm no philosopher, but like most things in life I believe there is some common sense ways of thinking that will get you through the day to day portions of coding.
+I'm no philosopher, but like most things in life I believe there is some common sense ways of thinking that will get you through the day to day of writing code ethically.
 Writing code ethically means allowing people to make informed decisions about their devices, data, and privacy.
 This requires the software that we write is upfront and consistent with how it stores and uses our data.
 It requires we write software that follows our privacy policies.
