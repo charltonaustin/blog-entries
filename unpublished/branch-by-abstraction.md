@@ -1,14 +1,14 @@
 ## The problem
-I want to write code that I consistently share with the rest of the team, but I also want trunk based development.
+I want to write code that is consistently shared with the rest of the team, but I also want trunk based development.
 
 ## What is branch by abstraction
-[Paul Hammant](https://www.linkedin.com/in/paulhammant/) a friend and mentor of mine.
-Has two great articles explaining what branch by abstraction is [here](https://trunkbaseddevelopment.com/branch-by-abstraction/) and [here](https://paulhammant.com/blog/branch_by_abstraction.html).
+[Paul Hammant](https://www.linkedin.com/in/paulhammant/) a friend and mentor of mine,
+has two great articles explaining branch by abstraction [here](https://trunkbaseddevelopment.com/branch-by-abstraction/) and [here](https://paulhammant.com/blog/branch_by_abstraction.html).
 The basic concept is pretty easy.
-Instead of having long lived branches in your version control system you simply create an abstraction that allows you to change the behavior with only a few minor changes.
-Now I love Paul, but one thing I've found missing when I try to explain this to people are some decent real world examples of branch by abstraction.
-Usually there are a lot of diagrams and talk about concepts, but very little solid examples.
-Since my team has been struggling with doing this in a coherent way I thought I would write this with some examples of what it might look like in the wild.
+Instead of having long lived branches in your version control system, you simply create an abstraction that allows you to change the behavior with only a few minor changes.
+As great as this concept is, there is one thing missing.  During any explaination, I fing it difficult to give decent real world examples of branch by abstraction.
+Usually there are a lot of diagrams and talk about concepts, but very few solid examples.
+My team has been struggling with doing this in a coherent way, so here are some examples of what it might look like in the wild.
 
 
 ## Example with a function
@@ -262,7 +262,7 @@ mario_kart_arcade()
 mario_kart_ds()
 ```
 
-Do some testing make sure everything is the way you want before you get here.
+Do some testing make sure everything is the way you want before you get here:
 ```python
 use_wario_saying = True
 
@@ -294,7 +294,7 @@ mario_kart_arcade()
 mario_kart_ds()
 ```
 
-Finally you are here
+Finally you are here:
 ```python
 class MarioCar(object):
 
