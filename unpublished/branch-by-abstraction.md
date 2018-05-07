@@ -6,7 +6,7 @@ I want to write code that is consistently shared with the rest of the team, but 
 has two great articles explaining branch by abstraction [here](https://trunkbaseddevelopment.com/branch-by-abstraction/) and [here](https://paulhammant.com/blog/branch_by_abstraction.html).
 The basic concept is pretty easy.
 Instead of having long lived branches in your version control system, you simply create an abstraction that allows you to change the behavior with only a few minor changes.
-As great as this concept is, there is one thing missing.  During any explaination, I fing it difficult to give decent real world examples of branch by abstraction.
+As great as this concept is, there is one thing missing.  During any explanation, I find it difficult to give decent real world examples of branch by abstraction.
 Usually there are a lot of diagrams and talk about concepts, but very few solid examples.
 My team has been struggling with doing this in a coherent way, so here are some examples of what it might look like in the wild.
 
