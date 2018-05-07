@@ -20,5 +20,5 @@ I believe that the data our users entrust to us should be carefully kept and tha
 
 ## Conclusion
 This is a tricky and difficult subject.
-it is something that professionals everywhere should spend time thinking about.
-Software engineers, like scientists and other professionals who have gone before them,  have a responsibility to society to be thoughtful about the code they write and what it might do.
+It is something that professionals everywhere should spend time thinking about.
+Software engineers, like scientists and other professionals who have gone before them, have a responsibility to society to be thoughtful about the code they write and what it might do.
