@@ -8,7 +8,7 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 
 #### Solution ####
-This solution is super straight forward. We satisfy the constraint that a < b < c by incrementing up by one in each variable and then we search for the solution. At first glance this might seem like an O(n^3) problem, but it's really just constant at least in the sense that we are only going to 1000 and we have no variable inputs. Mine runs fast enough. So I guess brute force it is today.
+This solution is straight forward. We satisfy the constraint that a < b < c by incrementing up by one in each variable and then we search for the solution. At first glance this might seem like an O(n^3) problem, but it's constant, at least in the sense that we are only going to 1000 and we have no variable inputs. Mine runs fast enough. So I guess brute force it is today.
 
 ```javascript
 var findPythagoreanTriplet = function(){
