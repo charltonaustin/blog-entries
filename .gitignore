@@ -47,3 +47,5 @@ flycheck_*.el
 
 # End of https://www.gitignore.io/api/emacs
 .idea
+
+.DS_Store
