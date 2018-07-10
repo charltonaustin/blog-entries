@@ -11,18 +11,18 @@ A quick google search will give you as many types of performance testing as you 
 Figuring out what you need to test is always the first step in improving your system.
 If you expect that you are going to have very spiky traffic, then you should probably do tests that will mimic this.
 This might mean that you measure how fast your system can scale up if you get massive amounts of traffics over a few minutes.
-At the Tuesday Company, since we are expecting more users and our we are starting to see lag times in loading, we decided to test increased user loads and speed of endpoints.
+At the Tuesday Company, since we are expecting more users and we are starting to see lag times in loading, we decided to test increased user loads and speed of endpoints.
 We also decided to stress test our system to see where our servers started to break down.
 
 ## Load vs. Speed vs. Stress
 Load in our case is the measure of response time while multiple clients connect to our API server.
 Speed, on the other hand, is the measure of how long a single endpoint takes to respond on average.
 Stress is how many concurrent users it takes for the server to start having error conditions.
-Those are at least the working definitions that we are using.
+Those are our working definitions.
 
 ## Our current tech stack
 We are using python at the moment along with flask for our API server.
-After a little searching and think we decided to use [Locust](https://github.com/locustio/locust) to run our tests.
+After a little searching and thought we decided to use [Locust](https://github.com/locustio/locust) to run our tests.
 Since we needed some way to measure where our bottlenecks were, we also decided to use the [Werkzeug profiler](http://werkzeug.pocoo.org/docs/0.14/contrib/profiler/)
 Locust has some pretty good documentation, and it was straightforward creating a few scenarios that covered our most common use cases.
 Werkzeug was a bit more involved, but I followed [this guide](http://www.alexandrejoseph.com/blog/2015-12-17-profiling-werkzeug-flask-app.html) and the profiler documentation and managed to muddle through.
@@ -37,6 +37,6 @@ profiler = ProfilerMiddleware(app, stream, profile_dir='/where/to/save')
 
 ## Our results
 At the end of the day, we verified about three significant changes to our infrastructure and code.
-We managed to reduce the call time for two of our endpoints by half with a code and database changes.
-We managed to increase the number of users we could handle by roughly double while keeping similar performance to before with an infrastructure change.
+We managed to reduce the call time for two of our endpoints by half with code and database changes.
+We managed to increase the number of users we could handle by roughly double, while keeping performance at the previous level with an infrastructure change.
 We also managed to improve by an order of magnitude.
