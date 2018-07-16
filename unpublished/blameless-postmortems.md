@@ -17,12 +17,19 @@ In my mind, the above is a practical reason why people should avoid placing blam
 Complex systems are well complex.
 They generally have several systems that interact with one another in sometimes unexpected ways.
 Wikipedia defines complex systems as systems that, "have distinct properties that arise from these relationships, such as nonlinearity, emergence, spontaneous order, adaptation, and feedback loops, among others."
-The ability of someone to hold in their mind all the possible places that something can go wrong is impossible.
+The ability of someone to hold in their mind all the possible states where something can go wrong is impossible.
 These properties which are inherent in the systems guarantee that one person can not hold all places that something can go wrong in their mind.
-Let's take as an example nonlinear which in simple terms means that if you were to do the same thing over with slightly different initial conditions, you would get wildly different outcomes.
-Since the difference in initial conditions that can cause radically different behavior can often be rounded to zero should not blame someone that does not realize a small change in the initial conditions breaks the system.
+Let's take an example.
+Nonlinear in simple terms means that the change of output from a system is not proportional to the input to that system.
+Since a small change in input can cause such a large change in output even small mistakes in the input can cause huge problems.
+Further nonlinear systems can seem linear depending on the scale you are looking at.
+Just think of exponential growth early in the graph it is almost flat and you can approximate the system with a line very well.
+Later in the lifecycle though this model will fail and it can do it rather rapidly and with out much warning.
+This means people are likely to miss this kind of behavior and when they do there will be failures.
+Should we blame people for not being able to predict something that is essentially unpredictable?
+I would say no.
 Instead, we should deal with this, by encouraging people to build systems that recover quickly and can cope with failing.
-Further, unless there is gross negligence, then we should take each failure as learning for the future.
+Further, unless there is gross negligence, we should take each failure as learning for the future.
 We want people to understand that we acknowledge that complex can be complicated and work to make them safe.
 
 ### Conclusion
