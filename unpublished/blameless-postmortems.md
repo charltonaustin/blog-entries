@@ -30,7 +30,7 @@ Should we blame people for not being able to predict something that is essential
 I would say no.
 Instead, we should deal with this, by encouraging people to build systems that recover quickly and can cope with failing.
 Further, unless there is gross negligence, we should take each failure as learning for the future.
-We want people to understand that we acknowledge that complex can be complicated and work to make them safe.
+We want people to understand that we acknowledge that complex systems can be complicated and work to make them safe.
 
 ### Conclusion
 Blame is a tricky beast and not only does it have practical bad effects like those mentioned in the Etsy article, but there are good reasons that we should not blame people from a more theoretical standpoint.
