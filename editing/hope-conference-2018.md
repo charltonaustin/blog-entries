@@ -1,7 +1,7 @@
 ### Context
 This weekend I had the joy of going to the [Hope Conference](http://xii.hope.net/index.html).
 I've been going to this conference for a few years and (as usual) I had a wonderful time.
-Generally speaking, the conference is filled with people that love to create, take things apart, and are curious.
+Generally speaking, the conference is filled with people who love to create, take things apart, and are curious.
 
 ### The Good
 Some of the highlights of the conference included a talk on [SecureDrop](https://www.hope.net/schedule.html#-spotlight-on-securedrop-anonymous-whistleblowing-in-the-trump-era-), [a talk](https://www.hope.net/schedule.html#-how-your-personal-information-is-obtained-and-exploited-to-manipulate-your-emotions-your-actions-and-your-vote-) by [Steven Rambam](https://www.hope.net/speakers.html#Steven%20Rambam) about privacy, and [a talk about legislation and privacy](https://www.hope.net/schedule.html#-we-must-legislate-to-block-collection-of-personal-data-) by [Richard Stallman](https://xii.hope.net/speakers.html#Richard%20Stallman).
