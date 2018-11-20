@@ -6,8 +6,57 @@ We also learned some important lessons about what it means for a team to grow bo
 
 ## Things that worked
 ###  Get it working first and then you can optimize it later
+
+You hear this all the time and I've done it in several places, but it is nice to see it from start to finish.
+The team worked hard to get something that fit the market quickly and provided immediate value for our customers.
+Then as new campaigns joined we began to see the cracks in our initial go.
+My focus for the team and when I was building the software myself was to build something that just did what the businessed asked.
+We never worried if it was the most elegant or efficient solution.
+THen as the users on-boarded we would quickly see the performance problems and work to systematically fix them. 
+
 ###  Focus on the highest impact features first
+
+Here again is another phrase that you hear over and over with agile teams.
+The strategy is to think big picture what would give your customers the most bang for their buck.
+We would often push back gold plating or pair down features to give the customer something that we thought might work.
+Then when we would see that it was working we would continue to upgrade it.
+This was a little difficult for our client success team as they preferred to have things in the final format first.
+But after we got into a rhythm and worked with them streamline the process of updating clients on change.
+We found that it was an incredibly successful strategy.
+It also gave us another way to collect feedback and put it back into the machine.
+
 ###  Make sure you do good capacity testing
-## Things that didn't work
+
+We are a small team, but we worked with all of the red to blue congressional races in this midterm.
+This meant two things.
+First we had to know the limits of where our software would start to break down.
+Second that we had leverage our technology with shifting size of the user base.
+We managed to do this only through regular capacity testing with production like traffic.
+We used a variety of tools and techniques and managed to really hit a home run in this area.
+
+## Things that did not work
 ###  Never put queries into for loops
+
+There were some places where we slipped up a bit.
+Occasionally either through lack of experience or rush to get a feature our we would shoot ourselves in the foot a bit.
+One place was putting SQL queries into loops.
+While we managed to find and solve these problems and they never led to full on disruption in production.
+I believe factoring these out a bit earlier in the process would not have added to much time to the devleopment process.
+It also would have saved us a bit of time in coming back and having to optimize certain bits of the code.
+That said this sort of mistake maybe should be expected when you are trying to find the most effective product for your market.
+
 ###  Letting deadlines stop communication
+
+One thing that I was surprised at how often it effected our ability to provide quality software was deadlines tripping us up.
+There were a few times where because we were busy dealing with the election or some other deadline communications would break down between team members.
+This never blew up in our face in a spectacular way, but it definitely created some heartache that could have been avoided.
+Making sure that team members do proper hand offs even when there is a lot going on is key.
+Also making sure that the culture is such that everyone feels a responsibility to make sure those hand offs happen is also key.
+
+
+## Wrap up
+
+I want to say thank you to all the people that helped make this election cycle process.
+My co-founders, my employees, all the hardworking candidates and their staffs.
+It has been an incredible journey and nice milestone in the bigger picture.
+I am lucky that every day I get to get up and work on something that I care deeply about.
