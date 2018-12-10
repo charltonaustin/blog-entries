@@ -47,11 +47,11 @@ That said, this sort of mistake can be expected when you are trying to find the 
 
 ###  Letting deadlines stop communication
 
-One thing that surprised me was how often deadlines affected our ability to provide quality software.
-There were a few times communications would break down between team members because we were busy dealing with the election or some other deadline.
-This never blew up in our face in a spectacular way, but it created heartache that could have been avoided.
-Making sure that team members do proper handoffs under pressure is critical.
-Also, creating a culture in which everyone feels personal responsibility about those handoffs is vital.
+One thing that I was surprised at how often it affected our ability to provide quality software was deadlines tripping us up.
+There were a few times where because we were busy dealing with the election or some other deadline communications would break down between team members.
+This never blew up in our face in a spectacular way, but it created some heartache that could have been avoided.
+Making sure that team members do proper hand offs even when a lot is going on is critical.
+Also making sure that the culture is such that everyone feels a responsibility to make sure those hand offs also happen.
 
 
 ## Wrap up
