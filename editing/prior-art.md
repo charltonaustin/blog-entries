@@ -1,11 +1,13 @@
 ## The Problem
 Sometimes there is the "right way" and other times there is how it is done in the codebase.
-I would argue the very rarely the "right way" isn't how it is done in the codebase.
-Recently an employee that was working on a part of the codebase argued that there were sections that weren't following the best practices.
-In particular the infrastructure code was centralized in one place rather than spread out through several modules of the codebase.
-He changed the newest codebase to test out the their theory.
-Up to this point I was completely on board with their decisions.
-You see a practice that doesn't match with best practices, you have a different idea, and you try it out.
+I would argue that a majority of the time the "right way" is how it is done in the codebase.
+This might seem surprising, but generally I think consistency is incredibly important in a codebase.
+So while at first glance a practice might not be the accepted best practice you shouldn't change the codebase unless you can change everything over to the best practice.
+Recently an employee that was working on a part of the codebase argued that there were sections that weren't following best practices.
+In particular the infrastructure code was centralized in one place rather than spread living close to the code in modules.
+He changed the newest codebase to test out the theory.
+Up to this point I was completely on board with his decisions.
+You see a practice that doesn't match with best practices, you have a an idea on how to fix it, and you try it out.
 It was the next steps that I really didn't agree with.
 At this point everyone agreed it was better to go ahead and have the infrastructure code live close to the code.
 But due to time constraints the rest of the code was not moved over to the new method.
@@ -26,7 +28,7 @@ You have to articulate a plan that makes sure you make progress on on the change
 ## The one thing you can't do
 The one thing you can't do is simply leave it in a half baked state.
 This is the where I think most engineers really tend to fail.
-I would argue that it is worse than simply keeping the less then best practice in some places but not others.
+I would argue that it is worse than simply keeping the less then best practice for the sake of consistency until you can safely make the move.
 At least with a consistent though admittedly not best practice it is easy for new people to learn how to contribute.
 It also means when you are doing tasks there is a single right way to do it.
 Most of the time it isn't that people who want the best practice don't plan on not finishing.
@@ -51,5 +53,3 @@ A way that I modify this would depend on the code.
 Maybe I set a fixed interval to update the code.
 We will spend 1 day a week until we get everything moved over unless you change the infra code and then you should update it then.
 The key here is to consider how long it is going to take and take into account what the risks are for your particular project.
-
- 
