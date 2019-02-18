@@ -1,8 +1,8 @@
 ## The Problem
-Sometimes there is the "right way" and other times there is how it is done in the codebase.
-I would argue that a majority of the time the "right way" is how it is done in the codebase.
+Sometimes there is the "right way" and other times there is "how it is done in the codebase".
+I would argue that a majority of the time the "right way" is the "how it is done in the codebase".
 This might seem surprising, but generally I think consistency is incredibly important in a codebase.
-So while at first glance a practice might not be the accepted best practice you shouldn't change the codebase unless you can change everything over to the best practice.
+So while at first glance a practice might not be the accepted best practice, you shouldn't change the codebase unless you can change everything over to the best practice.
 Recently an employee that was working on a part of the codebase argued that there were sections that weren't following best practices.
 In particular the infrastructure code was centralized in one place rather than spread living close to the code in modules.
 He changed the newest codebase to test out the theory.
@@ -15,8 +15,8 @@ But due to time constraints the rest of the code was not moved over to the new m
 ## Either shift everything, make a plan to shift everything in parts, or roll back and keep consistent practices
 At this point you have a few different options.
 1. You simply roll back the changes and wait until you have more time to implement the change.
-1. You keep the changes, but you articulate a plan for the whole team to make the changes.
-1. You go and update all older relevant sections to the new way.
+2. You go and update all older relevant sections to the new way.
+3. You keep the changes, but you articulate a plan for the whole team to make the changes.
 
 Now each of these has their own set of drawbacks and advantages.
 For instance, rolling back the changes and continuing with the old method tends to be the fastest way forward, but you don't have the new practice.
@@ -27,29 +27,29 @@ You have to articulate a plan that makes sure you make progress on on the change
 
 ## The one thing you can't do
 The one thing you can't do is simply leave it in a half baked state.
-This is the where I think most engineers really tend to fail.
+This is the where I think most engineers tend to fail.
 I would argue that it is worse than simply keeping the less then best practice for the sake of consistency until you can safely make the move.
-At least with a consistent though admittedly not best practice it is easy for new people to learn how to contribute.
-It also means when you are doing tasks there is a single right way to do it.
-Most of the time it isn't that people who want the best practice don't plan on not finishing.
+At least with a consistent, though admittedly not best, practice there is an option for new people to learn how to contribute.
+It also means there is a single right way to do tasks.
+Most of the time it isn't that people don't plan on not finishing implementation of a new practice.
 Rather the reason it never changes generally stems from two places.
 1. Poor communication
-1. Poor update plan
+2. Poor update plan
 
 The poor communication can come in many forms.
-Maybe the whole team doesn't know that you should update.
-Maybe they don't know how to update.
-Maybe the know they should and they know how, but they don't know when.
+Maybe the whole team doesn't know that updates should occur.
+Maybe the team members don't know how to update.
+Maybe the team members know they should and how to update, but don't know when updates should occur.
 
 The poor planning can have similar symptoms.
-For instance maybe you communicate a plan and it goes something like this.
-The next time someone touches this infra code we will update to the next practice.
-Infra code can go a long time without every needing to be updated.
-Often the longer changes like this live in a half state the more difficult it can be to change.
-Also the more likely someone will see the old example and perpetuate it in a new part of the code base.
-The problem here wasn't that you didn't communicate when, where, how, or what.
-It is that the when might never come.
-A way that I modify this would depend on the code.
-Maybe I set a fixed interval to update the code.
-We will spend 1 day a week until we get everything moved over unless you change the infra code and then you should update it then.
-The key here is to consider how long it is going to take and take into account what the risks are for your particular project.
+For instance maybe you communicate a plan and it goes something like this;
+  "The next time someone touches this infra code we will update to the next practice."
+Infra code can go a long time without ever needing to be updated.
+Often the longer systems live in a half state the more difficult changes can be to make.
+Also it more likely someone will see the old example and perpetuate it in a new part of the code base.
+The problem here wasn't that you didn't communicate "when", "where", "how", or "what".
+It is that the "when" might not come for a long time, if ever.
+
+An option for modification may be to set a fixed interval for code updates.
+We will spend 1 day a week until we get everything moved over to the new practice, unless you change the infra code and that should be updated immediately.
+The key here is to consider how long it is going to take, as well as taking into account the risks for your particular project.
