@@ -4,7 +4,7 @@ I would argue that a majority of the time the "right way" is the "how it is done
 This might seem surprising, but generally I think consistency is incredibly important in a codebase.
 So while at first glance a practice might not be the accepted best practice, you shouldn't change the codebase unless you can change everything over to the best practice.
 Recently an employee that was working on a part of the codebase argued that there were sections that weren't following best practices.
-In particular the infrastructure code was centralized in one place rather than spread living close to the code in modules.
+In particular the infrastructure code was centralized in one place rather than spread throughout the code in modules.
 He changed the newest codebase to test out the theory.
 Up to this point I was completely on board with his decisions.
 You see a practice that doesn't match with best practices, you have a an idea on how to fix it, and you try it out.
@@ -29,7 +29,8 @@ You have to articulate a plan that makes sure you make progress on on the change
 The one thing you can't do is simply leave it in a half baked state.
 This is the where I think most engineers tend to fail.
 I would argue that it is worse than simply keeping the less then best practice for the sake of consistency until you can safely make the move.
-At least with a consistent, though admittedly not best, practice there is an option for new people to learn how to contribute.
+At least with a consistent, though admittedly not best, practice there is one right way to do things and so refactoring, on-boarding, and learning the codebase all become significantly easier.
+This is especially true with operational tasks where time pressure can be high and a need to not make mistakes is crucial.
 It also means there is a single right way to do tasks.
 Most of the time it isn't that people don't plan on not finishing implementation of a new practice.
 Rather the reason it never changes generally stems from two places.
