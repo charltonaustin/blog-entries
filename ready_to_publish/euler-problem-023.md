@@ -14,7 +14,7 @@ The first solution took over two mins some 130s to find the answer.
 Finished in 130.656 seconds
 ```
 
-So I decided to refactor my code a bit. First instead of removing the numbers I generate all possible sums and create a poor man's set using a JavaScript object. Then sum up to the number if the number is not in the set. It works like a charm and only takes .115 seconds. 
+So I decided to refactor my code a bit. First, instead of removing the numbers, I generate all possible sums and create a poor man's set using a JavaScript object. Then sum up to the number, if the number is not in the set. It works like a charm and only takes .115 seconds. 
 ```
 Finished in 0.115 seconds
 ```
