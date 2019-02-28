@@ -6,7 +6,7 @@ Words may not be split, but you may assume that no single word is too long for a
 
 ### Solution
 
-This is a pretty straightforward problem when it comes down to it, but it takes a bit of thinking to get there.
+This is a straightforward problem when it comes down to it, but it takes some thinking to get there.
 We need to work through the different edge cases to figure out exactly how to make this work.
 I would like to create a solution that deals with channels allowing users to send delete characters and such.
 I think it would be an interesting problem in itself.
