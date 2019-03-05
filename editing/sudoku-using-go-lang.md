@@ -131,3 +131,9 @@ For a few reasons.
 1. Finally it also sparked a weird journey that led me [here](https://sites.math.washington.edu/~morrow/mcm/team2306.pdf)
     1. Sudoku and games are fun
     1. Solving the problems they present are interesting in their own right
+
+
+## Next steps
+Eventually I want to do something based on the paper about creating Sudoku boards.
+Mostly I'm interested in modeling the problem as a set of rules or constraints with and option to brute force it so as to make all board solvable.
+That's a different future blog post though.
