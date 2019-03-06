@@ -26,7 +26,7 @@ The four adjacent digits in the 1000-digit number that have the greatest product
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
 #### Solution ####
-This guy is a pretty fun warm up for the day. A simple loop to walk over the numbers looking in all the possible directions (there are four). Going down and up are the same, going left and right are the same, forward-up is the same as going backward-down, and going forward-down is the same as going backward-up. Then as we traverse we simply keep track of the largest value.
+This guy is a straightforward fun warm up for the day. A simple loop to walk over the numbers looking in all the possible directions (there are four). Going down and up are the same, going left and right are the same, forward-up is the same as going backward-down, and going forward-down is the same as going backward-up. Then as we traverse we keep track of the largest value.
 
 ```javascript
 var findLargestMultiple = function(string, length){
