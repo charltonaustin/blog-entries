@@ -5,7 +5,7 @@ Or, you would like to better understand why you have more bugs in one part of th
 
 ## One approach
 One thing that I like to look at when this happens is cyclomatic complexity.
-That however often isn't enough to get the full picture of what is happening with code.
+That often isn't enough to get the full picture of what is happening with code.
 Another place I like to look is how often a file is changing.
 
 ## Some theory
@@ -17,12 +17,12 @@ I like to use cyclomatic complexity, but there are benefits and drawbacks to usi
 I would suggest reading articles like this [one](https://www.cqse.eu/en/blog/mccabe-cyclomatic-complexity/).
 Or articles like this [one](https://www.softwareyoga.com/cyclomatic-complexity/).
 They should help give you some background understanding if you don't already have it.
-I like it because while I know it is an imperfect measure I find it a good starting place for conversations about coding quality.
+I like it because while it is an imperfect measure, I find it a good starting place for conversations about coding quality.
 I believe though you could do this exercise with any number of measurements in a variety of ways.
 You could find some way to condense multiple measurements to a single value like the [maintainability index](https://radon.readthedocs.io/en/latest/intro.html#maintainability-index) or you could simply have a multidimensional graph.
 I personal like to keep things visual and simple so I use cyclomatic complexity with all of it's flaws as a single measure.
 I then take that measure and graph it how often code changes.
-To measure that I again use an imperfect approximation.
+To measure that, I again use an imperfect approximation.
 In particular since I use git for version control so I use the number of commits to a file as a rough approximation.
 
 
@@ -110,7 +110,7 @@ plt.ylabel("number of times changed")
 plt.title(f"complexity vs churn {project_name}")
 plt.show()
 ```
-Now none of this graphing code really depends on the project.
+Now, none of this graphing code really depends on the project.
 All you really need are two files that are named cc.txt and changes.txt.
 It reads those and then creates a graph where the x label comes from cc.txt and the y label comes from changes.txt.
 It only really depends on [matplotlib](https://matplotlib.org/) and [mplcursors](https://mplcursors.readthedocs.io/en/stable/)
@@ -118,11 +118,11 @@ You could easily do this in any language that you prefer.
 
 ## What does it all mean
 This graph can quickly and fairly easily track down possible trouble spots in your code.
-The graph that is produced I break into 4 quadrants.
-The lower left hand are files that have low cyclomatic complexity and that rarely change these guys are the good files.
-The lower right side has files that have high cyclomatic complexity and they rarely change these can maybe be fixed by reducing complexity, but aren't high priority.
+The graph that is produced breaks into 4 quadrants.
+The lower left hand has files that have low cyclomatic complexity and that rarely change these guys are the good files.
+The lower right side has files that have high cyclomatic complexity and they rarely change these. These may be fixed by reducing complexity, but aren't high priority.
 The upper left side has low cyclomatic complexity and the files change frequently these can maybe be fixed by breaking them into smaller pieces, but aren't high priority.
-The upper right side had files that have high cyclomatic complexity and the files change frequently, these guys are my red flags.
+The upper right side has files that have high cyclomatic complexity and the files change frequently.  These guys are my red flags.
 I tend to see if I can break them up so that they change less and/or I look for ways to reduce the complexity.
 
 ## References
