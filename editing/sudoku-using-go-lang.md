@@ -12,7 +12,7 @@ One of them is that the interview should look at the relevant skills that are go
 That is if you are going to be doing web development then the interview should be about well... web development.
 I wish I could say this is a post about hiring and interviews, but it isn't.
 Someday I'll come back and I'll write that post and probably gripe like an old man about hiring practices.
-How those hiring practices can effect the diversity and capabilities of a team and all that jazz.
+How those hiring practices can affect the diversity and capabilities of a team and all that jazz.
 This post in a weird twist is actually about how I ended up finally writing that Sudoku solver.
 
 ## The code
@@ -135,5 +135,5 @@ For a few reasons.
 
 ## Next steps
 Eventually I want to do something based on the paper about creating Sudoku boards.
-Mostly I'm interested in modeling the problem as a set of rules or constraints with and option to brute force it so as to make all board solvable.
+Mostly I'm interested in modeling the problem as a set of rules or constraints with and option to brute force it so as to make all boards solvable.
 That's a different future blog post though.
