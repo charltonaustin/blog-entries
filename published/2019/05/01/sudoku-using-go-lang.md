@@ -91,37 +91,47 @@ An easier way to see it might be to just add comments like this.
 ```go
 func backTrace(b *board.Board) bool {
 	for x := 0; x < 9; x++ {
-		for y := 0; y < 9; y++ { // find empty square
+		for y := 0; y < 9; y++ { 
+			// find empty square
 			value, err := b.Get(x, y)
 			if err != nil {
 				panic(err)
 			}
 			if value == 0 { 
-				for _, number := range randomNumbers() { // go through digits 1 to 9 
+				for _, number := range randomNumbers() {
+					// go through digits 1 to 9
 					err := b.Update(x, y, number)
 					if err != nil {
 						panic(err)
 					}
-					if b.IsValid() { // If there is no conflict for digit at row, 
-						if backTrace(b) { // col assign digit to row, col and recursively try fill in rest of grid
-							return true //If recursion successful, return true
+					// If there is no conflict for digit at row,
+					if b.IsValid() {
+					    // col assign digit to row, col and recursively try fill in rest of grid
+						if backTrace(b) { 
+						    //If recursion successful, return true
+							return true 
 						}
-						b.Update(x, y, 0) //Else, remove digit and try another
+						//Else, remove digit and try another
+						b.Update(x, y, 0) 
 					} else {
-						b.Update(x, y, 0) //Else, remove digit and try another (okay not exactly 1-1, but close)
+						//Else, remove digit and try another (okay not exactly 1-1, but close)
+						b.Update(x, y, 0) 
 					}
 
 				}
-				return false // If all digits have been tried and nothing worked, return false
+				// If all digits have been tried and nothing worked, return false
+				return false 
 			}
 		}
 	}
-	return true //If there is none, return true
+	//If there is none, return true
+	return true 
 }
 ```
 
 ## Why is this even here
 For a few reasons.
+
 1. One if you are asked a random Sudoku question and you have read this hopefully it helps you to get through the interview
 1. I found writing this super relaxing and it started me on a completely different journey reading about algorithm design and such
     1. If you want to know more I suggest you read a few articles
