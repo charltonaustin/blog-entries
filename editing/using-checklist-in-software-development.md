@@ -4,8 +4,9 @@ My initial inspiration came from [The Checklist Manifesto](http://atulgawande.co
 The book which was initially published in 2009 sent me frantically searching for checklists in software development.
 At the time I couldn't find any.
 Today though I found a treasure trove of checklists from [Code Complete Two](https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670) by [Steve McConnell](https://stevemcconnell.com/books/)
-I set out to write this blog post to describe the use of checklists at my [company]().
+I set out to write this blog post to describe the use of checklists at my [company](https://www.tuesdaycompany.com/).
 So this blog post will do a few things:
+
 1. Describe the checklists that I have created in the intervening years
 1. Talk about The Checklist Manifesto and it's effect on the checklists I have created
 1. Talk about the checklists in Code Complete Two and their effect on our checklists
@@ -43,3 +44,11 @@ The checklists from code complete are useful in that they give you a starting po
 
 
 ## Most important things I have learned
+Checklists don't work out the gate.
+You have to try and then refine them.
+For them to be the most effective for you I always try and make them living documents.
+That is I know that they should change as we see new and different problems.
+As such I often create various representations of checklists.
+I usually have a word document for ones that I am not going to audit.
+A form for ones that I want to have a paper trail on or that I would like to create statistics about.
+Finally they should be as short as possible while still being effective.
