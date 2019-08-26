@@ -39,5 +39,5 @@ When this happens a thorough understanding of 'why' is important.
 Here applying the [five whys technique](https://en.wikipedia.org/wiki/5_Whys) is good.
 For instance you might find that it has to do with language.
 This is where other techniques become vitally important.
-Maybe you should review [domain driven design](https://en.wikipedia.org/wiki/Domain-driven_design) practices.
+If you find that language is often a barrier then you should review [domain driven design](https://en.wikipedia.org/wiki/Domain-driven_design) practices.
 
