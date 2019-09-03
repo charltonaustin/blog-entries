@@ -2,7 +2,7 @@
 If you haven't seen or read [The Architecture of Open Source Applications](http://aosabook.org/en/intro1.html) then you are missing out.
 Sure, it is a bit long.
 Also, each section is written by a different writer making it slightly inconsistent.
-There are gems throughout the book that make it worth the read.
+But, there are gems throughout the book that make it worth the read.
 
 ## One of the gems
 Here's an example of one of the gems from the [Berkeley DB](http://aosabook.org/en/bdb.html) section.
