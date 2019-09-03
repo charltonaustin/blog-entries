@@ -57,7 +57,7 @@ They are most effective when they are living documents.
 They should change as we see new and different problems.
 I often create various representations of checklists.
 I usually have a word document for ones that I am not going to audit.
- I have a form for ones that will have a paper trail or will be generating statistics.
+I have a form for ones that will have a paper trail or will be generating statistics.
 Currently, every time a PR is finished today engineers fill out two surveys.
 One for each of the two checklists that we have developed.
 Those are then audited weekly for two reasons.
