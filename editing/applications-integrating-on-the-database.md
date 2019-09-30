@@ -23,7 +23,7 @@ If more than one system process uses a particular table/column then automaticall
 How it must take those changes into account depends on the how the services use the table/column.
 For instance; there are readable backwards compatible changes and writeable backwards compatible changes.
 These changes also depend on the language.
-One expample may be as follows; *service A* reads and writes to column 1 and *service B* only reads from column 1.
+One example may be as follows; *service A* reads and writes to column 1 and *service B* only reads from column 1.
 Both services are in python.
 Currently column 1 is a string enum.
 If you then were to expand that to a varchar or text field, you could only change *service A* provided that *service B* doesn't do anything based on the enum type.
