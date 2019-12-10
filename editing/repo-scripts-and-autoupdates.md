@@ -17,7 +17,7 @@ It should automatically update your pre-commit script.
 When the TuesdayCompany started I was working with a pretty junior engineer.
 In fact he hadn't graduated from college yet.
 Luckily for me he was incredibly smart and motivated.
-Unfortunately for me he had never written unit tests for me.
+Unfortunately for me he had never written unit tests.
 That meant a lot of the early codebase had no tests.
 This worked for a while, but was less than ideal.
 Eventually the company began to get some traction so I could come on full time.
