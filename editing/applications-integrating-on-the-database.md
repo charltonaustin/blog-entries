@@ -53,7 +53,7 @@ Most applications need to deal with distributed systems in order to manage scale
 People end up sharding their MySQL database because a single large vertical instance can't meet or is too expensive for traffic levels.
 So in some sense the choice of database gives you another lever to pull in terms of where the complexity lives.
 In particular you can choose to model many small services with their own database if your data shards well.
-On the other hand you could decide to deal with eventual consistency on the application level so that you can have databases that span the globe,s
+On the other hand you could decide to deal with eventual consistency on the application level so that you can have databases that span the globe.
 
 ## Isn't it easier to do it later
 People like monoliths.
@@ -67,7 +67,7 @@ So why would you want to start by splitting services on the database level?
 Why not decide that you don't know as much as you will tomorrow so you should wait until you have pain?
 There are two reasons I argue that you should split early.
 The first reason is that combining data models is generally easier than splitting them.
-The second reason is that large scale conceptual differences are fairly consistent markers that Identify a need for a different process.
+The second reason is that large scale conceptual differences are fairly consistent markers that identify a need for a different process.
 This can work in reverse.
 If you are missing the large scale conceptual difference, then perhaps it makes sense to wait until you feel the pain.
 Though I would recommend that you "up your pain meter", since it is generally very difficult to split data once it is used by two modules or processes.
