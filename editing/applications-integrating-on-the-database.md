@@ -7,7 +7,7 @@ My first piece of advice is that when you have a new process it should have it's
 While the overhead is often real, it is minimal compared to the pain caused when you want to pull the two processes apart later.
 However, I find that people often fight against having two databases from the start.
 They see the immediate pain, and either don't know (or can't see) the pain of the future.
-If they know and then discount the pain, they maybe overly discounting future pain. 
+If they know and then discount the immediate pain, they may be overly discounting future pain. 
 There is a name for this sort of bias, it is called [hyperbolic discounting](https://en.wikipedia.org/wiki/Hyperbolic_discounting).
 Regardless, sometimes you decide that you are going to have a single database for multiple processes.
 Maybe it is because recreating many data models isn't your idea of fun.
@@ -28,7 +28,7 @@ Both services are in python.
 Currently column 1 is a string enum.
 If you then were to expand that to a varchar or text field, you could only change *service A* provided that *service B* doesn't do anything based on the enum type.
 If it is just a reporting service then you are done.
-Say now that you are doing this in Java. 
+Let's look at the same scenario in Java. 
 If your type reflects the enum type that comes from the database you are likely to have to change both services.
 This coupling likely started out because when you built *service A* and *service B* it was more straightforward for them to directly access the same database.
 To make these independent only one process should be allowed to read or write from a column.
@@ -44,7 +44,7 @@ Once we start to break it down in these terms we can start to make strategic dec
 For instance, if *module A* and *module B* are developed by a single team and you don't expect many changes in the data model then the answer becomes clear - 
 You should probably leave well enough alone.
 Likewise, if *module A* and *module B* are owned by two different teams or need drastically different deployment cycles then it becomes clear that you should probably separate out *service A* and *service B*.
-This means you have to deal overhead of communication between the services.
+This means you have to deal with the overhead of communication between the services.
 
 
 ## How does the database that you choose change the problem
