@@ -6,6 +6,7 @@ But, there are gems throughout the book that make it worth the read.
 
 ## One of the gems
 Here's an example of one of the gems from the [Berkeley DB](http://aosabook.org/en/bdb.html) section.
+
 > Design Lesson 13: "There is rarely such thing as an unimportant bug. Sure, there's a typo now and then, but usually a bug implies somebody didn't fully understand what they were doing and implemented the wrong thing. When you fix a bug, don't look for the symptom: look for the underlying cause, the misunderstanding, if you will, because that leads to a better understanding of the program's architecture as well as revealing fundamental underlying flaws in the design itself."
 
 This quote is incredible because of how true it is.
