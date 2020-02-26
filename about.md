@@ -17,12 +17,6 @@ I believe that security, education, and software can come together to make the w
 I'm proud to have started a civic technology company that's reimagining political engagement for the digital age.
 We are currently [hiring](https://www.tuesdaycompany.com/jobs/).
 
-### Unitarian Congregational Society in Brooklyn
-I currently volunteer at First Unitarian Congregational Society in Brooklyn for civil rights and social action committee.
-The First Unitarian Congregational Society in Brooklyn is a joyful, caring, religious community that inspires and empowers people to grow spiritually, care for one another, and work for social justice and stewardship of the earth.
-
-You can see their website [here](http://www.fuub.org/home/).
-
 ## My past
 - [CoreOS](https://coreos.com/) -- Senior Software engineer
 - [ReBootKAMP](http://rbk.org/) -- Volunteer and Hacker in Residence
