@@ -1,8 +1,8 @@
 ## The problem
-Say that you have a list of items and each item has a price.
-You would like to highlight the item or items that have the lowest price.
-If all of the items are the same price you wouldn't like to highlight any of them.
-We might have something like the following
+Let's look at a list of items and item prices.
+Our goal is to highlight the item or items which have the lowest price.
+If all of the items are the same price then no items will be highlighted.
+We might use something like the following
 
 ```python
 import sys
@@ -41,12 +41,12 @@ else:
 print(printable_string.rstrip("\n"))
 ```
 
-This is fine as long as our list is short.
-Imagine though that our list was incredibly long.
-You might realize that you have to traverse our items list twice.
-The first time when we are finding the smallest price and testing if all prices are the same.
-The second time when we want to print out the items.
-Given a long enough list this would be less than ideal.
+This is fine as long as the list is short.
+Imagine though that the list is incredibly long.
+You might realize that you have to traverse the items list twice.
+The first time occurs when we are finding the smallest price and testing if all prices are the same.
+The second time occurs when we want to print out the items.
+Given a long enough list this process would be less than ideal.
 
 ## The solution
 One way to solve this problem would be to keep track of this data at list insertion time.
@@ -111,7 +111,7 @@ class Items:
     return ItemsIterator(self)
 ```
 
-Now we can rewrite our printing code to something like the following.
+Now we can rewrite our printing code to the following.
 
 ```python
 items = Items()
@@ -134,6 +134,6 @@ print(printable_string.rstrip("\n"))
 ```
 
 Now we only have to traverse the items container exactly one time.
-Remember never optimize until you have a problem.
+Remember never to optimize until you have a problem.
 Also you you can read more details about emulating containers [here](https://docs.python.org/3/reference/datamodel.html#emulating-container-types).
 You can read about emulating [generic](https://docs.python.org/3/reference/datamodel.html#emulating-generic-types), [callable](https://docs.python.org/3/reference/datamodel.html#emulating-callable-objects), and [numeric](https://docs.python.org/3/reference/datamodel.html#emulating-numeric-types) types at their respective links.
