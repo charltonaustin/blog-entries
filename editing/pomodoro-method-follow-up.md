@@ -1,7 +1,7 @@
 ## Pomodoro Technique
 I've blogged about it before.
 Recently I dusted off my old method and tried to implement it.
-I found that there were some rather strange problems with my old method and MacOS.
+I found that there were some rather strange problems with my old method using MacOS.
 So I wanted to help some people.
 
 ## The scripts
